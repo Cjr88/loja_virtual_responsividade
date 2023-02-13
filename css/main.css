@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sahitya', serif;
+   
+
+}
+.media{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    list-style: none;
+    background-color: rgb(11, 47, 11);
+    color: #fff;
+    margin-bottom: 50px;
+}
+.cabeçalho h1{
+    font-size: 2em;
+}
+.cabeçalho ul{
+    display: flex;
+    list-style:none;
+}
+.cabeçalho li{
+    margin: 8px;
+}
+.cabeçalho a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+a:hover{
+    border-bottom: 3px solid #fff;
+}
+.principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.container .principal img{
+    border-radius: 100px;
+}
+.container{
+    display: flex;
+    margin-top: 10px;
+ 
+}
+.sobre{
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+.sobre h3{
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 6px;
+    text-align: center;
+    align-items: center;
+}
+.sobre p{
+    font-size: 1.1em;
+    margin-left: 5px;
+    text-align: center;
+    margin-top: 9px;
+}
+section{
+    margin-top: 33px;
+}
+.section-produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    text-align: center;
+
+}
+.produtos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.produtos p{
+    font-size: 1.1em;
+}
+section h2{
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.section-produtos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3% 3%;
+}
+.produtos a{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+}
+.produtos button{
+    cursor: pointer;
+    padding: 16px;
+    background-color: rgb(10, 52, 23);
+    border-radius: 5%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: none;
+}
+.produtos button:hover{
+    background-color: rgb(68, 122, 85);
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px){
+    .media{
+        display: block;
+        max-width: 90%;
+    }
+    .cabeçalho{
+        padding: 5px;
+        margin: 1px;
+        list-style: none;
+        background-color: rgb(15, 97, 41);
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 0.7em;
+    }
+    .principal{
+        display: block;
+        max-width:100%;
+    }
+    .container .principal img{
+        width: 100%;
+        border-radius: 100px;
+    }
+    .container{
+        display: block;
+        margin-top: 10px;
+    }
+    .sobre h3{
+        font-size: 1.1em;
+    }
+    .sobre p{
+        font-size: 0.9em;
+    }
+    section{
+        display: block;
+    }
+    section h2{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    section h3{
+        font-size: 1.1em;
+    }
+    .section-produtos {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        width: 100%;
+    }
+    .produtos button{
+        padding: 10px;
+        border-style: none;
+        font-size: 1em;
+    }
+    a:hover{
+    border-bottom: 3px solid #fff;
+}
+}
+@media screen and (min-width:760px) and (max-width:1024px){
+    .media{
+        display: block;
+        max-width: 80%;
+    }
+    .principal{
+        display: block;
+        max-width:100%;
+    }
+    .container .principal img{
+        width: 100%;
+        border-radius: 100px;
+    }
+    .container{
+        display: block;
+        margin-top: 10px;
+    }
+    .section-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 4%;
+        margin-left: 15%;
+        text-align: center;
+    }
+    a:hover{
+        border-bottom: 3px solid #fff;
+    }
+  
+}
